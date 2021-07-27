@@ -1,0 +1,253 @@
+<!doctype html>
+<html>
+<head>
+
+<meta charset="utf-8">
+
+<title>YDP CLUB</title>
+
+
+<link href="../css/reset.css" rel="stylesheet" >
+<link href="../css/YDPCULE1.css" rel="stylesheet" >
+
+
+
+
+<script src="../js/jquery-1.11.0.min.js"></script>
+
+<script>
+$(function(){
+$('#imgbox ul.img li:last').prependTo('ul.img');
+$('ul.img').css('margin-left','-744px');
+
+btnLeft();
+btnRight();
+movieTimer();
+
+
+$('#imgbox2 ul.event li:last').prependTo('ul.event');
+$('ul.event').css('margin-left','-170px');
+movieTimer02();
+
+ 
+
+
+
+});
+
+
+function btnLeft(){
+  $('p.prv').click(function(){
+	  $('p.prv').hide();
+	  $('p.next').hide();
+	  $('ul.img:not(:animated)').animate({marginLeft:'+=744px'},1000,function(){
+	  $('ul.img li:last').prependTo('ul.img');
+	  $('ul.img').css('margin-left','-744px');
+	  $('p.prv').show();
+	  $('p.next').show();
+		  });
+	  });
+}
+function btnRight(){
+	$('p.next').click(function(){
+		$('p.prv').hide();
+	  $('p.next').hide();
+	  $('ul.img:not(:animated)').animate({marginLeft:'-=744px'},1000,function(){
+	  $('#imgbox ul.img li:first').appendTo('ul.img');
+	  $('ul.img').css('margin-left','-744px');
+	   $('p.prv').show();
+	  $('p.next').show();
+			});
+		});
+	
+	}
+
+
+function movieTimer(){
+	setInterval(movieAni,3600);
+
+	}
+	
+
+function movieAni(){
+$('ul.img').animate({marginLeft:'+=744px'},1000,function(){
+	  $('#imgbox ul.img li:last').prependTo('ul.img');
+	  $('ul.img').css('margin-left','-744px');
+		  });	
+	}
+
+
+
+/*이벤트광고*/
+
+
+function movieTimer02(){
+	setInterval(movieAni02,2400);
+
+	}
+	
+
+function movieAni02(){
+$('ul.event').animate({marginLeft:'+=170px'},1000,function(){
+	  $('#imgbox2 ul.event li:last').prependTo('ul.event');
+	  $('ul.event').css('margin-left','-170px');
+		  });	
+	}
+
+
+
+</script>
+</head>
+
+<body>
+
+<div id="all">
+<header>
+<h1><a href="index.html"><img src="../img/img/logo.png" alt="YDP CLUB"></a></h1>
+<nav>
+<h1 class="hide_class">메뉴</h1>
+<ul class="meun">
+<li><a href="YDPCLUB2.html">INTRODUCTION</a></li>
+<li><a href="YDPCLUB3.html">GALLERY</a></li>
+<li><a href="YDPCLUB4.html">RESERVATION</a></li>
+<li><a href="YDPCLUB5.html">EVENT</a></li>
+</ul>
+<!--home login join 검색창-->
+<ul class="login">
+<li><a href="index.html">HOME</a></li>
+
+<li><a href="form_input_01.html">LOGIN</a></li>
+
+<li><a href="#">JOIN</a></li>
+
+</ul>
+</nav>
+<!--<iframe src="audio.html"></iframe>-->
+
+</header>
+<section id="content">
+<h1 class="hide_class">메인이벤트</h1>
+<section class="event1">
+<h1 class="hide_class">메인이벤트들</h1>
+<div id="content">
+
+<div id="imgbox">
+<ul class="img">
+<li><a href="YDPCLUB5.html"><img src="../img/img/angel.png"  alt="엔젤" width="744" height="453"></a></li>
+<li><a href="YDPCLUB5.html"><img src="../img/img/ladyday.png" alt="레이디데이" width="744" height="453"></a></li>
+<li><a href="YDPCLUB5.html"><img src="../img/img/triple.png" alt="트리플" width="744" height="453"></a></li>
+<li><a href="YDPCLUB5.html"><img src="../img/img/magnum.png" alt="매그넘" width="744" height="453"></a></li>
+
+</ul>
+</div>
+
+<!---
+<p class="prv"><img src="../img/img/main_prv.png" alt="뒤로"></p>
+<p class="next"><img src="../img/img/main_next.png" alt="뒤로"></p>
+---->
+</div>
+</section>
+
+
+<section class="event2">
+<h1 class="hide_class">이벤트 공지들</h1>
+
+<figure>
+<a href="YDPCLUB5.html"><img src="../img/img/syndrome.png" alt="다르네내한공연"></a>
+<figcaption><a href="YDPCLUB5.html">
+<span>다르네 내한 공연 파티</span><br>
+Open 10:00 to 7:00<br>감각적인 그녀의 멋진 음악세계<br>
+놓치지마세요!</a></figcaption>
+</figure>
+
+<figure>
+<a href="YDPCLUB5.html"><img src="../img/img/dj.png" alt="디제이"></a>
+<figcaption><a href="YDPCLUB5.html"><span>NU SOUND PARTY</span><br>미성년자 및 신분증 미 지참시<br> 
+입장불가//슬리퍼 정장등 입장<br>
+제한 있을 수 있음</a></figcaption>
+</figure>
+
+<figure>
+<a href="YDPCLUB5.html"><img src="../img/img/ufo.png" alt="유에포"></a>
+<figcaption><a href="YDPCLUB5.html">
+<span>UFO PARTY</span><br>
+frl-sat pm 10:00-am09:00<br>We invite you to exciting 
+parties.</a></figcaption>
+</figure>
+
+<figure>
+<a href="YDPCLUB5.html"><img src="../img/img/ladies.png" alt="레이디스"></a>
+<figcaption><a href="YDPCLUB5.html"><span>선착순 여성200명<br> 
+무제한 팔찌 증정</span><br>Open 10:00 to 9:00</a></figcaption>
+</figure>
+
+</section>
+
+
+
+<aside id="sub">
+<h1 class="hide_class">sub내용</h1>
+<aside class="sub1">
+<h1 class="hide_class">공지정보</h1>
+<dl>
+<dt><a href="YDPCLUB4.html">공지사항</a></dt>
+<dd><a href="YDPCLUB4.html">*평일:시간제한없습니다.
+주말:9시이전 까지만 
+가능합니다.</a></dd>
+<dd><a href="YDPCLUB4.html">*이벤트 클럽 파티 공지 
+확인 해주세요!!</a></dd>
+
+</dl>
+</aside>
+
+
+
+<aside class="sub2">
+
+<h1 class="hide_class">예약현황</h1>
+
+<dl>
+<dt><a href="YDPCLUB4.html">RESERVATION</a></dt>
+<dd><a href="YDPCLUB4.html"><img src="../img/img/main_re2.jpg" alt="예약"></a></dd>
+</dl>
+</aside>
+<aside class="sub3">
+<h1 class="hide_class">오시는길</h1>
+
+
+<dl>
+<dt><a href="#">Transportation</a></dt>
+<dd><a href="#">*지하철이용시<br>
+				*자가용이용시</a></dd>
+
+</dl>
+
+<p class="img2"><img src="../img/img/1.png" alt="오시는길"></p>
+</aside>
+
+<h1 class="hide_class">이벤트광고</h1>
+<aside class="sub4">
+<div id="content2">
+<div id="imgbox2">
+<ul class="event">
+<li><a href="YDPCLUB5.html"><img src="../img/img/csmk.png" alt="cmsk" width="170" height="207"></a></li>
+<li><a href="YDPCLUB5.html"><img src="../img/img/beach.png" alt="beach" width="170" height="207"></a></li>
+<li><a href="YDPCLUB5.html"><img src="../img/img/famlly.png" alt="famlly" width="170" height="207"></a></li>
+</ul>
+</div>
+</div>
+</aside>
+
+</aside>
+
+
+
+</section>
+
+<footer>
+<h1 class="hide_class">저작권주소</h1>
+서울 특별시 영등포구 YDP CLUB TEL:000-000-0000</footer>
+</div>
+
+</body>
+</html>
